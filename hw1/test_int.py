@@ -24,5 +24,5 @@ class TestInt:
 
     @pytest.mark.parametrize('x', list(range(-2, 2, 2)))
     @pytest.mark.parametrize('y', list(range(3, 7, 2)))
-    def test_int_4(self, x, y):
+    def test_int_5(self, x, y):
         assert x != y

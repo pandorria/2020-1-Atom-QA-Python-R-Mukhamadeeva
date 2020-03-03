@@ -23,7 +23,7 @@ class TestDict:
             "D2": 3,
             "F": 2,
         }
-        assert "C" and "D1" in x
+        assert "C" in x and "D1" in x
 
     def test_dict_3(self):
         x = {
