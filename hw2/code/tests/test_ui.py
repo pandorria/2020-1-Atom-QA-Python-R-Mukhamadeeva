@@ -20,7 +20,7 @@ class Test(BaseCase):
         self.advert.click(self.advert.locators.COMPANY_BUTTON)
         self.advert.click(self.advert.locators.NEW_CAMPAIGN, timeout=20)
         self.advert.click(self.advert.locators.AUDIO_ADVERT, timeout=20)
-        self.advert.find(self.advert.locators.ADD_AUDIO).send_keys(os.path.dirname(__file__) + "/audio.mp3")
+        self.advert.find(self.advert.locators.ADD_AUDIO).send_keys(os.path.join(os.path.dirname(__file__), '..', 'audio.mp3'))
         self.advert.click(self.advert.locators.ADD_ADVERT, timeout=20)
         self.advert.find(self.advert.locators.DONE, timeout=10)
         assert "Создана рекламная кампания" in self.driver.page_source
