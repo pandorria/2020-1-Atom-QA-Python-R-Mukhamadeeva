@@ -1,0 +1,6 @@
+docker
+requests
+pytest
+selenium
+webriver-manager
+pytest-xdist
